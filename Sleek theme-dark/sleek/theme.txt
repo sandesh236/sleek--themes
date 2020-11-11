@@ -21,7 +21,7 @@ align = "center"
 }
 
 +label{
-text="select your prefered os"
+text="select your preferred os"
 font = "DejaVu Sans Regular 16"
 color="#8f8f8f"
 top=30%-60
