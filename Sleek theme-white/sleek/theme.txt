@@ -22,10 +22,10 @@ align = "center"
 }
 
 +label{
-text="select your preferred os"
+text="select your preferrred os"
 font = "DejaVu Sans Regular 16"
 color="#8d8686"
-top=30%-60
+top=30%-30
 left = 50%-80
 align = "center"
 width=160
@@ -36,18 +36,6 @@ height= 40
 
 
 
-+label{
-text="designed by techsan"
-font = "Unifont Regular 16"
-color="#8d8686"
-top=95%
-left=20
-height=48
-width=300
-
-}
-
-
 
 
 
@@ -56,8 +44,8 @@ width=300
   width = 60%
   top = 30%
   height = 40%
-  icon_width = 16
-  icon_height = 16
+  icon_width = 32
+  icon_height = 32
   item_height = 30
   item_padding = 1
   item_icon_space = 5
@@ -68,7 +56,7 @@ width=300
   selected_item_color= "#FFFFFF"
   selected_item_pixmap_style = "select_*.png"
   scrollbar = true
-  scrollbar_width = 10
+  scrollbar_width = 20
   scrollbar_thumb = "slider_*.png"
 }
 

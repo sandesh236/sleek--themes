@@ -56,14 +56,14 @@ read -t10
 #checking for root access
 prompt -w "\nChecking for root access...\n"
 if [ "$UID" -eq "$ROOT_UID" ]; then
-  # Create themes directory if not exists
+  # remove theme direcory
   prompt -i "\nDleting theme directory...\n"
   if [ -d ${THEME_DIR}/${THEME_NAME} ]; then
    rm -R ${THEME_DIR}/${THEME_NAME}
  fi
 
   
-  # Backup grub config
+  # remove grub config
   cp -an /etc/default/grub /etc/default/grub.bak
   sed -i '/GRUB_THEME=/d' /etc/default/grub
 
