@@ -1,5 +1,5 @@
 
-desktop-color: "#F0F0F0"
+desktop-image: "background.png"
 
 title-text:" "
 message-font: "DejaVu Sans Regular 14"
@@ -14,7 +14,7 @@ color="#4286DD"
 left = 50%-200
 top = 15%
 height = 20
-width = 400      
+width = 400
 align = "center"
 
 
@@ -64,13 +64,13 @@ height= 40
   left = 50%-300
   top = 90%+20
   height = 20
-  width = 600    
-  color = "#8d8686"   
+  width = 600
+  color = "#8d8686"
   font = "Terminus Regular 16"
   align = "center"
   id = "__timeout__"
-  text = "@TIMEOUT_NOTIFICATION_LONG@"   
-  text_color = "#efefef"     
+  text = "@TIMEOUT_NOTIFICATION_LONG@"
+  text_color = "#efefef"
   bar_style = "*"
   highlight_style = "*"
 }
@@ -80,7 +80,7 @@ height= 40
 left = 50%-300
         top = 80%+20
         height = 20
-        width = 600      
+        width = 600
         align = "center"
         color = "#8d8686"
         text = "@KEYMAP_SHORT@"
