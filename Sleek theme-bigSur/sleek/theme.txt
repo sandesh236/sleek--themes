@@ -3,14 +3,14 @@ desktop-image: "background.png"
 
 
 title-text:" "
-message-font: "DejaVu Sans Regular 14"
+message-font: "Poppins Regular 14"
 message-color: "#757575"
 terminal-font: "Terminus Regular 14"
 terminal-box: "terminal_*.png"
 
 +label{
 text="Grub Bootloader"
-font = "DejaVu Sans Regular 48"
+font = "Poppins Regular 48"
 color="#99C6FF"
 left = 50%-200
 top = 15%
@@ -22,8 +22,8 @@ align = "center"
 
 +label{
 text="select your preferred os"
-font = "DejaVu Sans Regular 16"
-color="#99c6FF"
+font = "Poppins Refular 16"
+color="#F3F3F3"
 top=30%-30
 left = 50%-80
 align = "center"
@@ -38,49 +38,44 @@ height= 40
 
 
 + boot_menu {
-  left = 20%
-  width = 60%
+  left = 25%
+  width = 50%
   top = 30%
   height = 40%
   icon_width = 32
-  icon_height = 32
-  item_height = 30
-  item_padding = 2
-  item_icon_space = 5
-  item_spacing = 35
+  icon_height =32
+  item_height = 48
+  item_padding = 8
+  item_icon_space = 12
+  item_spacing = 8
   menu_pixmap_style = "boot_menu_*.png"
-  item_font = "DejaVu Sans Regular 16"
-  item_color = "#999B96"
-  item_pixmap_style = "item_*.png"
-  selected_item_color= "#ffffff"
-  selected_item_pixmap_style = "select_*.png"
+  item_font = "Poppins Regular 18"
+  item_color = "#EDEDED"
+  selected_item_color= "#DDDDDD"
+  selected_item_pixmap_style= "select_bkg_*.png"
   scrollbar = true
-  scrollbar_width = 20
+  scrollbar_width = 12
   scrollbar_thumb = "slider_*.png"
 }
 
+
 + progress_bar {
-  left = 50%-300
-  top = 90%+20
-  height = 20
-  width = 600      
-  color = "#363636"   
-  font = "Terminus Regular 16"
-  align = "center"
-  id = "__timeout__"
-  text = "@TIMEOUT_NOTIFICATION_LONG@"   
-  text_color = "#efefef"     
-  bar_style = "*"
-  highlight_style = "*"
+		id = "__timeout__"
+		left = 0%
+		width = 100%
+		top = 100%
+		height = 23
+		show_text = true
+		text_color = "255, 255, 255"
+		bar_style = "progress_bar_*.png"
+		highlight_style = "progress_highlight_*.png"
 }
 
-
-+ label {
-       left = 50%-300
-        top = 80%+20
-        height = 20
-        width = 600      
-        align = "center"
-        color = "#99C6FF"
-        text = "@KEYMAP_SHORT@"
++ image {
+		top = 80%+47
+		left = 50%-240
+		width = 480
+		height = 42
+		file = "menu.png"
 }
+
