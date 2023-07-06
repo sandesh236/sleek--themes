@@ -50,7 +50,7 @@ function has_command() {
 }
 
 
-prompt -i "Press enter to begin installation${CDEF}(automatically onstall after 10s) ${b_CWAR}:${CDEF}"
+prompt -i "Press enter to begin installation${CDEF}(automatically install after 10s) ${b_CWAR}:${CDEF}"
 read -t10  
 
 #checking for root access
