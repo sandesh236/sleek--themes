@@ -22,7 +22,7 @@ align = "center"
 
 +label{
 text="select your preferred os"
-font = "Poppins Refular 16"
+font = "Poppins Regular 16"
 color="#F3F3F3"
 top=30%-30
 left = 50%-80
