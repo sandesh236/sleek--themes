@@ -50,7 +50,7 @@ function has_command() {
 }
 
 
-prompt -i "Press enter to begin installation${CDEF}(automatically onstall after 10s) ${b_CWAR}:${CDEF}"
+prompt -i "Press enter to begin installation${CDEF}(automatically install after 10s) ${b_CWAR}:${CDEF}"
 read -t10  
 
 #checking for root access
@@ -74,7 +74,7 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
     #adding username to grub bootloader
   prompt -w "Do you wanna display your name on a bootloader"
   read -p "[y/n]: " un
-  if [[ "$un" == "y" || "$pw" = "Y" ]]; then
+  if [[ "$un" == "y" || "$un" = "Y" ]]; then
     read -p "enter your Name [max 24 character] : " username
     
     if [ ${#username} -gt 25 ]
