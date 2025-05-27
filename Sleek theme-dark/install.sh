@@ -85,7 +85,7 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
      fi
      prompt -i "\n Setting your username .......\n ."
    
-     sed -i "s/Grub Bootloader/Hello $username,/g"  $THEME_DIR/$THEME_NAME/theme.txt
+     sed -i "s/Grub Bootloader/Hello, $username/g"  $THEME_DIR/$THEME_NAME/theme.txt
   fi
   
   
